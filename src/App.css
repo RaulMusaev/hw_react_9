@@ -1,38 +1,124 @@
-.App {
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f7;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+nav ul li a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.main-title {
+  margin-top: 50px;
+  font-size: 3rem;
+  text-align: center;
+  color: #007bff;
+}
+
+.baku-info {
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: rgb(192, 55, 55);
+  border-radius: 8px;
+}
+
+.baku-info p {
+  color: #4476a8;
+}
+
+.shakespeare-info {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.shakespeare-info h1 {
+  color: #8b0000;
+}
+
+.shakespeare-info p {
+  color: #333;
+}
+
+.landmark-info, .photos-info {
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.route-links {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.route-links a {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+.route-links a:hover {
+  color: #138496;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #0056b3;
 }
